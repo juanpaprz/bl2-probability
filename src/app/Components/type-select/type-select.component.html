@@ -1,0 +1,9 @@
+<div class="mb-3">
+  <label for="type" class="form-label">Type</label>
+  <select class="form-select" name="type" id="type">
+    <option value=""></option>
+    <option *ngFor="let type of weaponTypes" [value]="type.name">
+      {{ weaponTypeEnum[type.name] }}
+    </option>
+  </select>
+</div>
