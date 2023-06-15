@@ -1,8 +1,8 @@
 export enum WeaponTypeEnum {
   'Pistol',
   'SMG',
-  'Assault Rifle',
+  'AssaultRifle',
   'Shotgun',
   'Sniper',
-  'Rocket Launcher',
+  'RocketLauncher',
 }

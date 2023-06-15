@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { EntitiesService } from '../../Services/entities.service';
+import { WeaponTypeService } from '../../Services/weapon-type.service';
 import { WeaponType } from '../../Entities/weapon-type.entity';
 import { WeaponTypeEnum } from '../../Enums/weapon-type.enum';
 
@@ -12,9 +12,9 @@ export class TypeSelectComponent implements OnInit {
   weaponTypes: WeaponType[] = [];
   weaponTypeEnum: typeof WeaponTypeEnum = WeaponTypeEnum;
 
-  constructor(private typeService: EntitiesService) {}
+  constructor(private typeService: WeaponTypeService) {}
 
   ngOnInit() {
-    this.weaponTypes = this.typeService.getWeaponTypes();
+    this.weaponTypes = this.typeService.getAllWeaponTypes();
   }
 }
